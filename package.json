@@ -1,0 +1,20 @@
+{
+  "name": "Aoc",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "echo \"Error: no start specified\" && exit 1",
+    "format:write": "prettier --write \"**/*.ts\" --cache",
+    "format:check": "prettier --check \"**/*.ts\" --cache",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Jihed Mastouri",
+  "license": "MIT",
+  "dependencies": {
+    "@types/node": "^20.8.10"
+  },
+  "devDependencies": {
+    "prettier": "^3.1.0",
+    "ts-node": "^10.9.1"
+  }
+}
