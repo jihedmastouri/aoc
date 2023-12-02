@@ -1,7 +1,9 @@
-import * as fs from 'node:fs';
-import * as rl from 'node:readline';
+import fs from 'node:fs';
+import rl from 'node:readline';
+import path from 'node:path';
 
-const fileStream = fs.createReadStream('input');
+const location = path.join(__dirname, 'input');
+const fileStream = fs.createReadStream(location);
 const lines = rl.createInterface({ input: fileStream });
 
 let sum = 0;
