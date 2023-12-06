@@ -77,7 +77,7 @@ lines.on('line', (l) => {
 	);
 
 	prevLine = l;
-	prevNums = temp.map(el => el.slice());
+	prevNums = temp.map((el) => el.slice());
 	idx++;
 });
 
