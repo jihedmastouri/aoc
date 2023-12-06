@@ -33,7 +33,8 @@ lines.on('line', (l) => {
 	}
 
 	for (let i = 0; i < n; i++) {
-		const temp = repeats[idx + i + 1] !== undefined ? repeats[idx + i + 1] : 1;
+		const temp =
+			repeats[idx + i + 1] !== undefined ? repeats[idx + i + 1] : 1;
 		repeats[idx + i + 1] = temp + repeats[idx];
 	}
 
