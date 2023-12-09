@@ -1,7 +1,6 @@
 {
   "name": "Aoc",
-  "version": "1.0.0",
-  "type": "nodule",
+  "version": "23.12.1",
   "scripts": {
     "start": "echo \"Error: no start specified\" && exit 1",
     "format:write": "prettier --write \"**/*.ts\" --cache",
@@ -15,7 +14,6 @@
     "@types/node": "^20.8.10"
   },
   "devDependencies": {
-    "prettier": "^3.1.0",
-    "ts-node": "^10.9.1"
+    "prettier": "^3.1.0"
   }
 }
