@@ -51,8 +51,6 @@ universe.forEach((l, i) =>
 	})
 );
 
-fs.writeFileSync('houni', universe.map((el) => el.join('')).join('\n'));
-
 let res = 0;
 for (let i = 0; i < locations.length - 1; i++) {
 	for (let j = i + 1; j < locations.length; j++) {
