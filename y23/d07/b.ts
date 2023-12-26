@@ -25,8 +25,8 @@ const convertFunction = (str: string): number => {
 	return counts[0] === 3 && counts[1] === 2
 		? 3.5
 		: counts[0] === 2 && counts[1] === 2
-		? 2.5
-		: counts[0];
+		  ? 2.5
+		  : counts[0];
 };
 
 const content = data

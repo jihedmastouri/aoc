@@ -78,8 +78,7 @@ function walk(coord: [number, number], distance: number, vis: boolean[][]) {
 		if (nextRow >= maze.length || nextCol >= maze[0].length) continue;
 
 		const next = maze[nextRow][nextCol];
-		if (!allowedDir(d, next) || vis[nextRow][nextCol] || next === '.')
-			continue;
+		if (!allowedDir(d, next) || vis[nextRow][nextCol] || next === '.') continue;
 
 		distances.push(walk([nextRow, nextCol], distance + 1, vis));
 	}

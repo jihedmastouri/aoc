@@ -36,6 +36,6 @@ const findLocation = (prev: number, index = 0) => {
 	findLocation(newEl, index + 1);
 };
 
-seeds.forEach(s => findLocation(s));
+seeds.forEach((s) => findLocation(s));
 
 console.log(locations.reduce((acc, el) => Math.min(acc, el), locations[0]));

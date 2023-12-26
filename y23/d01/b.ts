@@ -6,21 +6,10 @@ const location = path.join(__dirname, 'input');
 const fileStream = fs.createReadStream(location);
 const lines = rl.createInterface({ input: fileStream });
 
-const arr = [
-	'one',
-	'two',
-	'three',
-	'four',
-	'five',
-	'six',
-	'seven',
-	'eight',
-	'nine',
-];
+const arr = ['one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine'];
 let sum = 0;
 
-const toNum = (a: string) =>
-	isNaN(Number(a)) ? arr.indexOf(a) + 1 : Number(a);
+const toNum = (a: string) => (isNaN(Number(a)) ? arr.indexOf(a) + 1 : Number(a));
 
 lines.on('line', (l) => {
 	if (!l) return;

@@ -71,10 +71,7 @@ lines.on('line', (l) => {
 		}
 	}
 
-	sum += prevNums.reduce(
-		(acc, el) => (el.length !== 2 ? acc : acc + el[0] * el[1]),
-		0
-	);
+	sum += prevNums.reduce((acc, el) => (el.length !== 2 ? acc : acc + el[0] * el[1]), 0);
 
 	prevLine = l;
 	prevNums = temp.map((el) => el.slice());

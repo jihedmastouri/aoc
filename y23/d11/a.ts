@@ -17,11 +17,7 @@ lines.forEach((el, index) => {
 });
 
 emptyLines.forEach((n, count) => {
-	lines = [
-		...lines.slice(0, n + count + 1),
-		lines[n + count],
-		...lines.slice(n + count + 1),
-	];
+	lines = [...lines.slice(0, n + count + 1), lines[n + count], ...lines.slice(n + count + 1)];
 });
 
 const universe = lines.map((el) => el.trim().split(''));
@@ -38,7 +34,7 @@ for (let i = 0; i < universe[0].length; i++) {
 	}
 }
 
-emptyColumns.forEach((n,count) => {
+emptyColumns.forEach((n, count) => {
 	universe.forEach((l, idx, arr) => {
 		arr[idx] = [...l.slice(0, n + count + 1), '.', ...l.slice(n + count + 1)];
 	});
