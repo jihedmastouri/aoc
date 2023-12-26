@@ -18,7 +18,6 @@ const [times, distances] = data
 let res = 1;
 
 for (let index = 0; index < times.length; index++) {
-
 	let count = 0;
 	let speed = 1;
 
