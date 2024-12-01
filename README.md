@@ -1,4 +1,5 @@
 # Advent of Code
 
-- y23: `typescript` + `node` (WIP)
-- y22: `python` (4 days problems)
+- y24: `Go` (WIP)
+- y23: `typescript` + `node` (21*)
+- y22: `python` (8*)
